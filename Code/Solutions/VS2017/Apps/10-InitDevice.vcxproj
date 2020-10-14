@@ -21,6 +21,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\Samples\10-InitDevice\InitDevice.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libs\FatFramework.vcxproj">
+      <Project>{7fe6c04a-5afd-44a0-9234-0310fcea575f}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{072BB138-2A01-4341-B9D1-D2E8ADBE9414}</ProjectGuid>

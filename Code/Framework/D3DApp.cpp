@@ -1,4 +1,5 @@
 #include "Framework/D3DApp.h"
+#include "Framework/D3DVertexFormat.h"
 
 extern D3DApp* GApp = nullptr;
 
@@ -13,6 +14,11 @@ MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 D3DApp::D3DApp(HINSTANCE hInstance, std::wstring winCaption, D3DDEVTYPE devType, DWORD requestedVP)
 {
+#if FAT_DEBUG_BUILD
+	// Enable run-time memory check for debug builds
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+#endif
+
 	mMainWndCaption = winCaption;
 	mDevType = devType;
 	mRequestedVP = requestedVP;
@@ -25,10 +31,12 @@ D3DApp::D3DApp(HINSTANCE hInstance, std::wstring winCaption, D3DDEVTYPE devType,
 
 	InitMainWindow();
 	InitDirect3D();
+	InitAllVertexDeclarations();
 }
 
 D3DApp::~D3DApp()
 {
+	DestroyAllVertexDeclarations();
 	SafeRelease(md3dObject);
 	SafeRelease(GD3DDevice);
 }
