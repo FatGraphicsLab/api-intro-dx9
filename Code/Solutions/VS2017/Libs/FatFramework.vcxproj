@@ -20,11 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Framework\D3DHeaders.cpp" />
+    <ClCompile Include="..\..\..\Framework\D3DUtil.cpp" />
     <ClCompile Include="..\..\..\Framework\D3DVertexFormat.cpp" />
     <ClCompile Include="..\..\..\Framework\DX\dxerr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Framework\D3DHeaders.h" />
+    <ClInclude Include="..\..\..\Framework\D3DUtil.h" />
     <ClInclude Include="..\..\..\Framework\D3DVertexFormat.h" />
     <ClInclude Include="..\..\..\Framework\DX\dxerr.h" />
   </ItemGroup>
