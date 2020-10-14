@@ -12,6 +12,8 @@
     <ClCompile Include="..\..\..\Framework\D3DVertexFormat.cpp" />
     <ClCompile Include="..\..\..\Framework\D3DHeaders.cpp" />
     <ClCompile Include="..\..\..\Framework\D3DUtil.cpp" />
+    <ClCompile Include="..\..\..\Framework\D3DTimer.cpp" />
+    <ClCompile Include="..\..\..\Framework\D3DApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Framework\DX\dxerr.h">
@@ -20,5 +22,7 @@
     <ClInclude Include="..\..\..\Framework\D3DHeaders.h" />
     <ClInclude Include="..\..\..\Framework\D3DVertexFormat.h" />
     <ClInclude Include="..\..\..\Framework\D3DUtil.h" />
+    <ClInclude Include="..\..\..\Framework\D3DTimer.h" />
+    <ClInclude Include="..\..\..\Framework\D3DApp.h" />
   </ItemGroup>
 </Project>
