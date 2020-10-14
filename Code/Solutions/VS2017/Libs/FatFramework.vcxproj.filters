@@ -9,10 +9,13 @@
     <ClCompile Include="..\..\..\Framework\DX\dxerr.cpp">
       <Filter>DX</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Framework\D3DVertexFormat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Framework\DX\dxerr.h">
       <Filter>DX</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Framework\D3DHeaders.h" />
+    <ClInclude Include="..\..\..\Framework\D3DVertexFormat.h" />
   </ItemGroup>
 </Project>
