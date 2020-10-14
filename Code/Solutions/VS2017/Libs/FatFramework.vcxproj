@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\D3DHeaders.cpp" />
     <ClCompile Include="..\..\..\Framework\D3DVertexFormat.cpp" />
     <ClCompile Include="..\..\..\Framework\DX\dxerr.cpp" />
   </ItemGroup>

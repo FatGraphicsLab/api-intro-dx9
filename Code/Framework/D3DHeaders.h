@@ -19,3 +19,37 @@
 #  define _CRTDBG_MAP_ALLOC
 #  include <crtdbg.h>
 #endif
+
+#include <d3d9.h>
+#include <d3dx9.h>
+#include "Framework/DX/dxerr.h"
+
+extern IDirect3DDevice9* GD3DDevice;
+
+#define SafeRelease(x) { if (x) { x->Release(); x = nullptr; } }
+#define SafeDelete(x)  { delete x; x = nullptr; }
+
+#if FAT_DEBUG_BUILD
+#  ifndef HR
+#  define HR(x) \
+   { \
+     HRESULT hr = (x); \
+     if (FAILED(hr)) \
+     { \
+       DXTRACE_ERR_MSGBOX(L#x, hr); \
+	 } \
+   }
+#  endif
+#else
+#  ifndef HR
+#  define HR(x) (x)
+#  endif
+#endif
+
+// Colors
+
+const D3DXCOLOR WHITE(1.0f, 1.0f, 1.0f, 1.0f);
+const D3DXCOLOR BLACK(0.0f, 0.0f, 0.0f, 1.0f);
+const D3DXCOLOR RED(1.0f, 0.0f, 0.0f, 1.0f);
+const D3DXCOLOR GREEN(0.0f, 1.0f, 0.0f, 1.0f);
+const D3DXCOLOR BLUE(0.0f, 0.0f, 1.0f, 1.0f);

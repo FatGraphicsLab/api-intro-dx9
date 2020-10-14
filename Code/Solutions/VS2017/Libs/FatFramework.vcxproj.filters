@@ -10,6 +10,7 @@
       <Filter>DX</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Framework\D3DVertexFormat.cpp" />
+    <ClCompile Include="..\..\..\Framework\D3DHeaders.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Framework\DX\dxerr.h">
