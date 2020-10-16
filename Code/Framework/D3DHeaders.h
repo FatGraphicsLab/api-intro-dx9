@@ -45,3 +45,4 @@ extern IDirect3DDevice9* GD3DDevice;
 #  define HR(x) (x)
 #  endif
 #endif
+
