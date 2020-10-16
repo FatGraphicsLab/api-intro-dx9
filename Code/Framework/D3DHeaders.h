@@ -6,6 +6,8 @@
 #elif defined(FAT_RELEASE_BUILD)
 #  define FAT_DEBUG_BUILD   0
 #  define FAT_RELEASE_BUILD 1
+#else
+#  error Where is the build configuration?
 #endif
 
 #if FAT_DEBUG_BUILD
